@@ -4,15 +4,27 @@
   </head>
   <body>
     <script>
-      var addByFive = addBy(5);
+      // var addByFive = addBy(5);
 
-      console.log(addByFive(2)); //should console log 7
-      console.log(addByFive(5)); //should console log 10
+      // console.log(addByFive(2)); //should console log 7
+      // console.log(addByFive(5)); //should console log 10
 
-      var addByTen = addBy(10);
+      // var addByTen = addBy(10);
 
-      console.log(addByTen(2)); //should console log 12
-      console.log(addByTen(5)); //should console log 12
+      // console.log(addByTen(2)); //should console log 12
+      // console.log(addByTen(5)); //should console log 12
+
+      var Person = function (options) {
+
+      }
+
+      var person = Person({name: "Bob", password: "my_pass", bankAccount: "1234"});
+
+      person.get("name"); // "Bob"
+
+      person.get("bankAccount", "something"); // "INvalid password"
+      person.get("bankAccount", "my_pass"); // "1234"
+
     </script>
   </body>
 </html>
