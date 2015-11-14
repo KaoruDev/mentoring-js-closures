@@ -1,8 +1,27 @@
-<!doctype>
-<html>
-  <head>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>KaoruDev - Mentoring JS closures</title>
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+</head>
   <body>
+    <div id="mocha"></div>
+
+    <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.4.1/chai.min.js"></script>
+    <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+
+    <script src="lib/add-by.js"></script>
+    <script src="spec/add-by-spec.js"></script>
+
+    <script type="text/javascript">
+      window.expect = chai.expect;
+
+      mocha.run();
+    </script>
+
     <script>
       var addByFive = addBy(5);
 
